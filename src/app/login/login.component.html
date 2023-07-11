@@ -1,0 +1,28 @@
+<app-headers></app-headers>
+<div class="login-container">
+    <img src="assets/see.jpg" class="film">
+    <div class="logo">Rotten Potatoes</div>
+    <div class="desc">
+        <form>
+            <h2>Contact Form</h2>
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required class="marg" [(ngModel)]="username">
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required [(ngModel)]="useremail">
+            </div>
+            <!-- Add or modify additional form elements as needed -->
+            <div>
+                <div class="error">{{errorMsg}}</div>
+              <input type="submit" value="Submit" (click)="login()">
+            </div>
+          </form>
+          
+    </div>
+    </div>
+
+  
+
+<app-footer></app-footer>
