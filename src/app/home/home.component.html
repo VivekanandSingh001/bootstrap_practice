@@ -1,1 +1,29 @@
-<p>home works!</p>
+<header>
+    <h1>Welcome to the Home Page</h1>
+    <div class="buttons">
+        <button class="rotten-potatoes" (click)="goBack()">Rotten Potatoes</button>
+        <button class="logout" (click)="logOut()">Logout</button>
+    </div>
+</header>
+<body>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>UserId</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>body</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let employee of trendingMovies">
+                <tr>
+                    <td>{{ employee.userId}}</td>
+                    <td>{{ employee.id}}</td>
+                    <td>{{ employee.title }}</td>
+                    <td>{{ employee.body}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
