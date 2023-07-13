@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { JavaScriptComponent } from './java-script/java-script.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     ContentComponent,
     FooterComponent,
     LoginComponent,
+    JavaScriptComponent,
   ],
   imports: [
     BrowserModule,
